@@ -28,7 +28,7 @@ local KillHub = Instance.new("TextButton")
 --Properties:
 
 DeadRailsGUI.Name = "DeadRailsGUI"
-DeadRailsGUI.Parent = game.ServerStorage.deadrailsgui
+DeadRailsGUI.Parent = game.Players.LocalPlayer.PlayerGui
 DeadRailsGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
@@ -328,3 +328,4 @@ local function ZDMK_fake_script() -- KillHub.LocalScript
 	end)
 end
 coroutine.wrap(ZDMK_fake_script)()
+
