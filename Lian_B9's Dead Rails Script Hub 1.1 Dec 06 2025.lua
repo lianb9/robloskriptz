@@ -28,7 +28,7 @@ local KillHub = Instance.new("TextButton")
 --Properties:
 
 DeadRailsGUI.Name = "DeadRailsGUI"
-DeadRailsGUI.Parent = game.Players.LocalPlayer.PlayerGui
+DeadRailsGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 DeadRailsGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
@@ -270,13 +270,13 @@ KillHub.TextWrapped = true
 
 -- Scripts:
 
-local function NQFIBRJ_fake_script() -- Execute.LocalScript 
+local function DFHWYO_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local Button = script.Parent
 	
 	local function executeLoadstring()
-		loadstring(game:HttpGet(script:FindFirstChild("link").Value))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/hungquan99/HungHub/main/loader.lua"))()
 	end
 	
 	local function Click()
@@ -285,14 +285,14 @@ local function NQFIBRJ_fake_script() -- Execute.LocalScript
 	
 	Button.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(NQFIBRJ_fake_script)()
-local function IIEZ_fake_script() -- Execute_2.LocalScript 
+coroutine.wrap(DFHWYO_fake_script)()
+local function YFFJ_fake_script() -- Execute_2.LocalScript 
 	local script = Instance.new('LocalScript', Execute_2)
 
 	local Button = script.Parent
 	
 	local function executeLoadstring()
-		loadstring(game:HttpGet(script:FindFirstChild("link").Value))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/m00ndiety/Stillwater/refs/heads/main/obf_Prisonteleport.lua.txt"))()
 	end
 	
 	local function Click()
@@ -301,14 +301,14 @@ local function IIEZ_fake_script() -- Execute_2.LocalScript
 	
 	Button.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(IIEZ_fake_script)()
-local function QMRNBO_fake_script() -- Execute_3.LocalScript 
+coroutine.wrap(YFFJ_fake_script)()
+local function QVRSGX_fake_script() -- Execute_3.LocalScript 
 	local script = Instance.new('LocalScript', Execute_3)
 
 	local Button = script.Parent
 	
 	local function executeLoadstring()
-		loadstring(game:HttpGet(script:FindFirstChild("link").Value))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
 	end
 	
 	local function Click()
@@ -317,8 +317,8 @@ local function QMRNBO_fake_script() -- Execute_3.LocalScript
 	
 	Button.MouseButton1Down:Connect(Click)
 end
-coroutine.wrap(QMRNBO_fake_script)()
-local function ZDMK_fake_script() -- KillHub.LocalScript 
+coroutine.wrap(QVRSGX_fake_script)()
+local function PNEIQA_fake_script() -- KillHub.LocalScript 
 	local script = Instance.new('LocalScript', KillHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -327,5 +327,4 @@ local function ZDMK_fake_script() -- KillHub.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZDMK_fake_script)()
-
+coroutine.wrap(PNEIQA_fake_script)()
